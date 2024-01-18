@@ -15,12 +15,12 @@
     "react": "^18",
     "react-dom": "^18"
   },
-  "devDependencies": {
-    "gh-pages": "^6.1.1"
-  },
   "homepage": "https://marlonfolken.github.io/portfolio-app",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/marlonfolken/portfolio-app.git"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
