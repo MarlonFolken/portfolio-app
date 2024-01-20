@@ -7,9 +7,9 @@ const nextConfig = {
     unoptimized: true,
   },
   experimental: {
-    images: {
+/*     images: {
       unoptimized: true,
-    }
+    } */
   }
 }
 
