@@ -76,17 +76,6 @@ export default function Home() {
         </a>
 
       </div>
-      <div className={styles.center}>
-        Mounted with &nbsp;
-        <Image
-          className={styles.logo}
-          src={`${prefix}/next.svg`}
-          alt="Next.js Logo"
-          width={90}
-          height={18.5}
-          priority
-        />
-      </div>
       <Footer />
     </main>
   )
