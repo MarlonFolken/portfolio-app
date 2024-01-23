@@ -1,0 +1,13 @@
+.contactMedia {
+
+}
+.contactMedia ul {
+  list-style-type: none;
+  /* flex config */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.contactMedia ul li {
+  margin-right: 2em;
+}
