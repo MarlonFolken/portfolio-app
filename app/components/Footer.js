@@ -24,19 +24,6 @@ export default function Footer(){
             </a>
           </li>
           <li
-            title='Send e-mail'
-          >
-            <a href='mailto:marlonvargasmx@gmail.com'>
-              <Image
-                className={styles.logo}
-                src={`${prefix}/send-mail.svg`}
-                alt="email logo"
-                width={50}
-                height={50}
-              />
-            </a>
-          </li>
-          <li
             title='Telegram message'
           >
             <a href='https://t.me/marlonvc'>
@@ -57,6 +44,19 @@ export default function Footer(){
                 className={styles.logo}
                 src={`${prefix}/phone.svg`}
                 alt="phone logo"
+                width={50}
+                height={50}
+              />
+            </a>
+          </li>
+          <li
+            title='Send e-mail'
+          >
+            <a href='mailto:marlonvargasmx@gmail.com'>
+              <Image
+                className={styles.logo}
+                src={`${prefix}/send-mail.svg`}
+                alt="email logo"
                 width={50}
                 height={50}
               />

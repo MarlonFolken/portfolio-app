@@ -11,15 +11,6 @@ export default function Home() {
           Page under&nbsp;
           <code className={styles.code}>construction</code>
         </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By MarlonFolken
-          </a>
-        </div>
       </div>
 
       <div className={styles.center}>
