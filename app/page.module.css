@@ -14,9 +14,11 @@
   grid-template-columns: [col1]5vw [col2]45vw [col3]5vw [col4]40vw [col5]5vw;
   grid-template-rows: 
     [row1]5vh [row2]10vh 
-    [row3]15vh [row4]20vh 
+    [row3]20vh [row4]20vh 
     [row5]30vh 
     [row6]2em [row7]50px [row8]2em;
+  
+  font-size: 1rem;
 }
 
 .greetHead {
@@ -41,8 +43,15 @@
   
   display: grid;
   grid-template-columns: repeat(4, minmax(25%, auto));
+  min-width: 100%;
   max-width: 100%;
-  width: var(--max-width);
+}
+
+.title1{
+  font-size: 2rem;
+}
+.name{
+  font-size: 3rem;
 }
 
 .description {
@@ -166,34 +175,35 @@
 /* Mobile */
 @media (max-width: 700px) {
   .gridContainer {
-    grid-template-columns: [col1]5vw [col2]45vw [col3]5vw [col4]40vw [col5]5vw;
     grid-template-rows: 
     [row1]5vh [row2]10vh 
-    [row3]15vh [row4]20vh 
+    [row3]25vh [row4]20vh 
     [row5]30vh 
     [row6]2em [row7]80px [row8]2em;
   }
 
   .greetHead {
-    grid-column-start: col2;
     grid-column-end: col5;
-    grid-row-start: row3;
-    grid-row-end: row4;
   }
 
   .greetSpeech {
-    grid-column-start: col2;
     grid-column-end: col5;
-    grid-row-start: row4;
-    grid-row-end: row5;
   }
   
   .projectsCards {
     grid-template-columns: 1fr;
     margin-bottom: 120px;
-    max-width: 320px;
+    max-width: 100%;
     text-align: center;
   }
+
+  .title1{
+    font-size: 1.5em;
+  }
+  .name{
+    font-size: 2.5em;
+  }
+
   .card:last-child {
     padding-bottom: 6em;
   }

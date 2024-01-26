@@ -1,7 +1,25 @@
-import { Inter } from 'next/font/google'
+import localFont from 'next/font/local'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const amikoFont = localFont({
+  src: [
+    {
+      path: '../public/fonts/Amiko-Bold-webfont.woff',
+      weight: '700',
+      style: 'bold'
+    },
+    {
+      path: '../public/fonts/Amiko-Regular-webfont.woff',
+      weight: '400',
+      style: 'normal'
+    },
+    {
+      path: '../public/fonts/Amiko-SemiBold-webfont.woff',
+      weight: '600',
+      style: 'semibold'
+    }
+  ]
+})
 
 export const metadata = {
   title: 'Create Next App',
@@ -11,7 +29,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={amikoFont.className}>{children}</body>
     </html>
   )
 }

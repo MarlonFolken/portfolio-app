@@ -1,8 +1,11 @@
+import { Inter } from 'next/font/google'
 import Image from 'next/image'
 import styles from './page.module.css'
 import { prefix } from '../utils/prefix.js'
 import Footer from './components/Footer'
 import { Fragment } from 'react'
+
+const inter = Inter({subsets: ['latin']})
 
 export default function Home() {
   return (
@@ -15,12 +18,12 @@ export default function Home() {
           </p>
         </div>
         <div className={styles.greetHead}>
-          <h3>Desarrollador Web Frontend</h3>
-          <h1>Marlon Vargas</h1>
+          <div className={styles.title1}>Desarrollador Web Frontend</div>
+          <div className={styles.name}>Marlon Vargas</div>
         </div>
         <div className={styles.greetSpeech}>
-          <h2>Bienvenido a mi portafolio</h2>
-          <h4>Creando sitios web, con más de 8 años de experiencia</h4>
+          <div className={styles.title1}>Bienvenido a mi portafolio</div>
+          <div>Creando sitios web, con más de 8 años de experiencia</div>
         </div>
 
         <div className={styles.center}>
@@ -34,7 +37,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2>
+            <h2 className={inter.className}>
               Project1 <span>-&gt;</span>
             </h2>
             <p>Lorem ipsum</p>
@@ -46,7 +49,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2>
+            <h2 className={inter.className}>
               Project2 <span>-&gt;</span>
             </h2>
             <p>Sit amet, consectetur adipiscing elit.</p>
@@ -58,7 +61,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2>
+            <h2 className={inter.className}>
               Project3 <span>-&gt;</span>
             </h2>
             <p>Nulla congue porta velit</p>
@@ -70,7 +73,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2>
+            <h2 className={inter.className}>
               Project4 <span>-&gt;</span>
             </h2>
             <p>Faucibus dignissim neque interdum scelerisque</p>
