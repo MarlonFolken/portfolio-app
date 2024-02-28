@@ -4,6 +4,7 @@ import styles from './page.module.css'
 import { prefix } from '../utils/prefix.js'
 import Footer from './components/Footer'
 import { Fragment } from 'react'
+import ToggleDN from './components/ToggleDN'
 
 const inter = Inter({subsets: ['latin']})
 
@@ -17,13 +18,14 @@ export default function Home() {
             <code className={styles.code}>construction</code>
           </p>
         </div>
+        <ToggleDN/>
         <div className={styles.greetHead}>
           <div className={styles.title1}>Desarrollador Web Frontend</div>
           <div className={styles.name}>Marlon Vargas</div>
         </div>
         <div className={styles.greetSpeech}>
           <div className={styles.title1}>Bienvenido a mi portafolio</div>
-          <div>Creando sitios web, con más de 8 años de experiencia</div>
+          <div>Creando sitios web que muestren al mundo las ideas que deseas potenciar.</div>
         </div>
 
         <div className={styles.center}>

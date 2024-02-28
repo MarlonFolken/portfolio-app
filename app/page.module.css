@@ -21,6 +21,15 @@
   font-size: 1rem;
 }
 
+.togglePlace{
+  grid-column-start: col5;
+  grid-row-start: row2;
+  grid-row-end: row3;
+}
+.togglePlace button{
+  font-size: 2rem;
+}
+
 .greetHead {
   grid-column-start: col2;
   grid-column-end: col3;
@@ -180,6 +189,14 @@
     [row3]25vh [row4]20vh 
     [row5]30vh 
     [row6]2em [row7]80px [row8]2em;
+  }
+
+  .togglePlace{
+    grid-column-start: col4;
+    grid-column-end: col5;
+    grid-row-start: row2;
+    grid-row-end: row3;
+    text-align: right;
   }
 
   .greetHead {
