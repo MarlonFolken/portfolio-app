@@ -28,10 +28,6 @@ export default function Home() {
           <div>Creando sitios web que muestren al mundo las ideas que deseas potenciar.</div>
         </div>
 
-        <div className={styles.center}>
-
-        </div>
-
         <div className={styles.projectsCards}>
           <a
             href="/#"
